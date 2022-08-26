@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20220825 16:27:26.037" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.18 on win32)">
+<suite source="C:\Users\gmouhim\Downloads\Projet_TNR\Projet_RobotFramwork\TestCases\Lambdatest.robot" id="s1" name="Lambdatest">
+<test id="s1-t1" name="TestLambdaAccueil">
+<kw type="SETUP" name="TestSetUp" library="SetUp">
+<kw name="Log" library="BuiltIn">
+<arg>Start TestSetup</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220825 16:27:26.280" level="INFO">Start TestSetup</msg>
+<status status="PASS" endtime="20220825 16:27:26.280" starttime="20220825 16:27:26.280"/>
+</kw>
+<status status="PASS" endtime="20220825 16:27:26.281" starttime="20220825 16:27:26.280"/>
+</kw>
+<kw name="OuvrirUrlLambda" library="LambdaTest.keys">
+<arg>${Lambdatest_url}</arg>
+<arg>${navigateur}</arg>
+<doc>ce keyword permet d'ouvrir le site Lambdatest sur le navigateur chrome</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220825 16:27:26.282" level="INFO">Opening browser 'chrome' to base url 'https://www.lambdatest.com'.</msg>
+<status status="PASS" endtime="20220825 16:27:28.963" starttime="20220825 16:27:26.282"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220825 16:27:29.082" starttime="20220825 16:27:28.963"/>
+</kw>
+<status status="PASS" endtime="20220825 16:27:29.083" starttime="20220825 16:27:26.281"/>
+</kw>
+<kw name="VerifierElement" library="LambdaTest.keys">
+<arg>${TitrePage}</arg>
+<arg>${valeur_recherchee}</arg>
+<doc>ce keyword permet de vérifier l'existance d'un element</doc>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${XpathElement}</arg>
+<arg>${ValeurElement}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220825 16:27:29.145" level="INFO">Element '//h1' contains text 'Cross Browser
+Testing Cloud'.</msg>
+<status status="PASS" endtime="20220825 16:27:29.145" starttime="20220825 16:27:29.086"/>
+</kw>
+<status status="PASS" endtime="20220825 16:27:29.145" starttime="20220825 16:27:29.085"/>
+</kw>
+<kw name="CliquerButton" library="LambdaTest.keys">
+<arg>${SignupButton}</arg>
+<doc>ce keyword permet cliquer sur le button</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${XpathButton}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220825 16:27:29.179" starttime="20220825 16:27:29.145"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${XpathButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220825 16:27:29.179" level="INFO">Clicking element '//a[text()='Sign Up']'.</msg>
+<status status="PASS" endtime="20220825 16:27:59.533" starttime="20220825 16:27:29.179"/>
+</kw>
+<status status="PASS" endtime="20220825 16:27:59.533" starttime="20220825 16:27:29.145"/>
+</kw>
+<kw name="Remplirleschamps" library="LambdaTest.keys">
+<arg>${Name}</arg>
+<arg>${Email}</arg>
+<arg>${Password}</arg>
+<doc>ce keyword permet de remplir les champs nécessaire</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${XpathFullName}</arg>
+<arg>${NameValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220825 16:27:59.535" level="INFO">Typing text 'Hakima' into text field '//input[@id='name']'.</msg>
+<status status="PASS" endtime="20220825 16:27:59.652" starttime="20220825 16:27:59.534"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${XpathEmail}</arg>
+<arg>${EmailValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220825 16:27:59.652" level="INFO">Typing text 'hakima.tout3@gmail.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" endtime="20220825 16:27:59.861" starttime="20220825 16:27:59.652"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${XpathPassword}</arg>
+<arg>${PasswordValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220825 16:27:59.862" level="INFO">Typing text 'Hakimahakima' into text field '//input[@id='userpassword']'.</msg>
+<status status="PASS" endtime="20220825 16:28:00.000" starttime="20220825 16:27:59.862"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${XpathCheckBox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220825 16:28:00.001" level="INFO">Clicking element '//samp[@class='customcheckbox w-20 h-20 inline-block bg-white border border-gray-20 relative cursor-pointer mr-10']'.</msg>
+<status status="PASS" endtime="20220825 16:28:00.063" starttime="20220825 16:28:00.001"/>
+</kw>
+<status status="PASS" endtime="20220825 16:28:00.063" starttime="20220825 16:27:59.534"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220825 16:28:03.067" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20220825 16:28:03.067" starttime="20220825 16:28:00.064"/>
+</kw>
+<kw name="RemplirPhone" library="LambdaTest.keys">
+<arg>${Phone}</arg>
+<doc>ce keyword permet remplir le champ phone</doc>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Page Should Contain</arg>
+<arg>Please enter your phone</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Please enter your phone</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220825 16:28:03.299" html="true" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220825 16:28:03.299" starttime="20220825 16:28:03.183"/>
+</kw>
+<msg timestamp="20220825 16:28:03.302" level="FAIL">Page should have contained text 'Please enter your phone' but did not.</msg>
+<status status="FAIL" endtime="20220825 16:28:03.302" starttime="20220825 16:28:03.068"/>
+</kw>
+<msg timestamp="20220825 16:28:03.302" level="INFO">${status} = False</msg>
+<status status="PASS" endtime="20220825 16:28:03.302" starttime="20220825 16:28:03.068"/>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<arg>${status}</arg>
+<arg>input text</arg>
+<arg>${XpathPhone}</arg>
+<arg>${PhoneValue}</arg>
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${XpathPhone}</arg>
+<arg>${PhoneValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220825 16:28:03.303" level="INFO">Typing text '0699009901' into text field '//input[@id='phone']'.</msg>
+<status status="PASS" endtime="20220825 16:28:03.435" starttime="20220825 16:28:03.303"/>
+</kw>
+<status status="PASS" endtime="20220825 16:28:03.436" starttime="20220825 16:28:03.302"/>
+</kw>
+<status status="PASS" endtime="20220825 16:28:03.436" starttime="20220825 16:28:03.067"/>
+</kw>
+<kw name="CliquerButton" library="LambdaTest.keys">
+<arg>${XpathFreeSignup}</arg>
+<doc>ce keyword permet cliquer sur le button</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${XpathButton}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220825 16:28:03.464" starttime="20220825 16:28:03.439"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${XpathButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220825 16:28:03.465" level="INFO">Clicking element '//button[text()='FREE SIGN UP']'.</msg>
+<status status="PASS" endtime="20220825 16:28:03.511" starttime="20220825 16:28:03.464"/>
+</kw>
+<status status="PASS" endtime="20220825 16:28:03.511" starttime="20220825 16:28:03.437"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220825 16:28:10.520" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20220825 16:28:10.520" starttime="20220825 16:28:03.513"/>
+</kw>
+<kw name="VerifierElement" library="LambdaTest.keys">
+<arg>${XpathVerificationEmail}</arg>
+<arg>${EmailVerification}</arg>
+<doc>ce keyword permet de vérifier l'existance d'un element</doc>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${XpathElement}</arg>
+<arg>${ValeurElement}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220825 16:28:10.713" html="true" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220825 16:28:10.713" starttime="20220825 16:28:10.533"/>
+</kw>
+<msg timestamp="20220825 16:28:10.714" level="FAIL">Element with locator '//h1[contains(text(),'Please verify your email')]' not found.</msg>
+<status status="FAIL" endtime="20220825 16:28:10.714" starttime="20220825 16:28:10.522"/>
+</kw>
+<status status="FAIL" endtime="20220825 16:28:10.715" starttime="20220825 16:28:10.522"/>
+</kw>
+<kw type="TEARDOWN" name="TestTearDown" library="SetUp">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Close All Browsers</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20220825 16:28:12.934" starttime="20220825 16:28:10.717"/>
+</kw>
+<status status="PASS" endtime="20220825 16:28:12.934" starttime="20220825 16:28:10.717"/>
+</kw>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<arg>Capture Page ScreenShot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220825 16:28:12.934" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20220825 16:28:12.934" starttime="20220825 16:28:12.934"/>
+</kw>
+<status status="PASS" endtime="20220825 16:28:12.934" starttime="20220825 16:28:12.934"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220825 16:28:12.935" starttime="20220825 16:28:12.934"/>
+</kw>
+<status status="PASS" endtime="20220825 16:28:12.935" starttime="20220825 16:28:10.716"/>
+</kw>
+<status status="FAIL" endtime="20220825 16:28:12.935" starttime="20220825 16:27:26.279">Element with locator '//h1[contains(text(),'Please verify your email')]' not found.</status>
+</test>
+<status status="FAIL" endtime="20220825 16:28:12.939" starttime="20220825 16:27:26.039"/>
+</suite>
+<statistics>
+<total>
+<stat fail="1" skip="0" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" skip="0" id="s1" name="Lambdatest" pass="0">Lambdatest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
