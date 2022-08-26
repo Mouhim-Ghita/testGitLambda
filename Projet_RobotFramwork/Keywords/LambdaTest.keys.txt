@@ -8,6 +8,7 @@ OuvrirUrlLambda
     [Documentation]     ce keyword permet d'ouvrir le site Lambdatest sur le navigateur chrome
     Open Browser    ${Url}    ${Browser}
     Maximize Browser Window
+    Log     la fenetre est bien maximise
 
 VerifierElement
     [Arguments]     ${XpathElement}    ${ValeurElement}
